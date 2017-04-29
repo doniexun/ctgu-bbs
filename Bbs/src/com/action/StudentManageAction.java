@@ -6,6 +6,7 @@ import com.opensymphony.xwork2.ActionContext;
 import com.opensymphony.xwork2.ActionSupport;
 import com.orm.Student;
 import com.service.IStudentService;
+import com.tools.SendMail;
 
 public class StudentManageAction extends ActionSupport {
 	@Resource(name="studentService")
@@ -49,7 +50,7 @@ public class StudentManageAction extends ActionSupport {
 		}
 		return super.ERROR;
 	}
-	//修改个人细心
+	//修改个人信息
 	public String modifyStuInfo() throws Exception{
 		Student student = (Student)ActionContext.getContext().getSession().get("student");
 		Student stu = this.studentService.getStudentByStuNum(student.getStuNum());
@@ -78,6 +79,28 @@ public class StudentManageAction extends ActionSupport {
 	//进入修改密码页面
 	public String goToModigyPsw() throws Exception{
 		return "goToModigyPsw";
+	}
+
+	//进入找回密码页面
+	public String findPwd() throws Exception{
+		return "findPwd";
+	}
+
+
+	//找回密码
+	public String sendPwd() throws Exception{
+		Student stu = this.studentService.getStudentByStuNum(student.getStuNum());
+		if(stu == null){
+			addFieldError("student.stuNum", "账号错误或者没有注册");
+		}else {
+			try{
+				new SendMail().sendMail(stu.getEmail(), stu.getPassword());
+				return "findSuccess";
+			}catch (Exception e){
+				e.printStackTrace();
+			}
+		}
+		return this.findPwd();
 	}
 }
 
