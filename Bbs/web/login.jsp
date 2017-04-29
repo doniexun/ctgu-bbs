@@ -35,6 +35,9 @@
 			</s:form>
 			<s:actionmessage/>
 		</div>
+		<div>
+			忘记密码?&nbsp|&nbsp<a href="student_findPwd">找回密码</a>
+		</div>
 	</div>
 </center>
 
