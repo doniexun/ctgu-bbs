@@ -65,6 +65,7 @@
 			<result name="modifySuccess">/MessageInfo/ModifyStuInfoSuccess.jsp</result>
 			<result name="success">/PersonalInfo/StuPersonalInfo.jsp</result>
 			<result name="modifyPswSuccess">/PersonalInfo/StuPswModify.jsp</result>
+			<result name="goToModigyPsw">/PersonalInfo/StuPswModify.jsp</result>
 		</action>
 		
 		<!-- 登陆管理 指定method属性 -->

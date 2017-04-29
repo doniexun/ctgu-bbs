@@ -74,6 +74,11 @@ public class StudentManageAction extends ActionSupport {
 		}
 		return super.ERROR;
 	}
+
+	//进入修改密码页面
+	public String goToModigyPsw() throws Exception{
+		return "goToModigyPsw";
+	}
 }
 
 
