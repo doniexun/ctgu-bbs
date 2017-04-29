@@ -10,10 +10,8 @@
 <!-- 替换被修饰的页面的标题 -->
 <title><d:title default="装饰器页面"></d:title></title>
 
-
 <link href="../css/myDecorator.css" rel="stylesheet" type="text/css"/>
-<link href="..//css/Style.css" rel="stylesheet" type="text/css"/>
-<script type="text/javascript" src="..//js/jquery-1.8.3.js"></script>
+<script type="text/javascript" src="../js/jquery-1.8.3.js"></script>
 <script type="text/javascript" src="../js/myDecorator.js" charset=UTF-8></script>
 
 <!-- 被修饰的页面的head部分 -->

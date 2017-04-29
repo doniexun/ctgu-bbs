@@ -37,7 +37,7 @@ li:HOVER {  }
 	border: none;
 	width: 100px;
 	height: 30px;
-	background: url(/bbs/images/btn-submit.png) no-repeat;
+	background: url(../images/btn-submit.png) no-repeat;
 }
 .loginBtn:HOVER { 
 	cursor: pointer;

@@ -4,6 +4,6 @@
             <pattern>/*</pattern> 
             <pattern>/*.action</pattern> 
             <pattern>/*.jsp</pattern> 
-             <pattern>/*.html</pattern> 
+            <pattern>/*.html</pattern>
         </decorator> 
  </decorators> 

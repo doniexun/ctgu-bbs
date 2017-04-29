@@ -5,7 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Welcome</title>
-<script type="text/javascript" src="/bbs/js/jumpTo.js"></script>
+<script type="text/javascript" src="../js/jumpTo.js"></script>
 </head>
 <style>
 	#title{
@@ -33,8 +33,8 @@
 		</span>
 		&nbsp;秒后自动跳转到论坛首页</h3>
 		<script type="text/javascript">
-			countDown(5, '/bbs/index.action');
+			countDown(5, 'index.action');
 		</script>
-		<h3><a href="/bbs/index.action">[若没有自动跳转，请点击这里]</a></h3>
+		<h3><a href="index.action">[若没有自动跳转，请点击这里]</a></h3>
 	</div>
 </center>

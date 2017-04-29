@@ -12,7 +12,7 @@
 	line-height: 30px;
 	corlor: #1b72af;
 	border: 1px solid #d6e8f4;
-	background: repeat-x url('images/h.png');
+	background: repeat-x url('../images/h.png');
 }
 
 #Lboard ul li {
